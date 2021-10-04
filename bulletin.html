@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--- INFO532 20-21 Hunter Pavela--->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="ss1.css">
+    <script src="script.js" defer></script>
+    <title>Vax-Track Bulletin Board</title>
+</head>
+<body onload="accessBanner()">
+
+
+
+  <div class="heading-container">
+      <h1>Vax-Track Bulletin Board</h1>
+                <h5><a href="/index.html">Logout</a></h5> 
+                
+  </div>
+  <div>
+  <h3 id="forumListHeader">Bulletin Board</h3>
+  </div>
+  <section>
+      <!--Forum link area-->
+      <div class="tableContainer">
+          <div class="tableRow">
+            <div class="f-info">
+                <ul class="mainForumList">
+                    <li style="color: #121111;">Light Street CVS<i> by Administrator</i><sup> 5/29/21</sup> <button class="addbutton button3" style="float: right;">Delete Post</button></li> 
+                    <p> Ran out of vaccines early - any surplus we can have? </p>
+                    <li style="color: #121111;">Broad Street Library<i> by JoeUser</i> <sup> 5/30/21</sup> <button class="addbutton button3" style="float: right;">Delete Post</button></li>
+                    <p> Surplus of 20 J&J Vaccines </p>
+
+                </ul>
+            </div>
+            <aside class="comments">
+                <!--Announcements Area-->
+                <h3 class="mainForumList">Create New Post</h3>
+                <label for="Location">Select Vaccination Site</label>
+                <select name="vaxsite" id="vaxsite">
+                <optgroup label="Vax Sites">
+                <option value="Light">Light Street CVS</option>
+                <option value="Broad">Broad Street Library</option>
+                <option value="Punnet">Punnet Square</option>
+                </optgroup>
+                <p><textarea id="addpost" name="addposttext" rows="4" cols="50" style="background-color:white;"> Type your post here!              </textarea></p>
+                <button class="addbutton button3" style="float: center;">Post!</button>
+            </aside>
+          </div>
+        </div>
+  </section>
+  <div>
+  <footer>
+      <div class="accessBanner">
+      <h3 id="mainH3Copy"></h3>
+      </div>
+  </footer>
+  </div>
+</body>
+</html>

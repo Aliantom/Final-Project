@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!--- INFO532 20-21 Hunter Pavela--->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <link rel="stylesheet" type="text/css" href="ss1.css">
+    <script src="script.js" defer></script>
+    <title>Vax-Track Account Regisration</title>
+</head>
+<body class="standard">
+
+            <div class="heading-container">
+                <h2>New User Account</h2><br>
+                <h6><a href="/index.html">Home</a></h6>
+            </div>
+        <div class="registration-container">
+            <form id="registration">
+                <!---Form to collect user registration data-->
+                <label for="email"><b>email address</b></label>
+                <input type="email" id="email" required><br>
+                <label for="fname"><b>First name:</b></label>
+                <input type="text" id="fname" ><br>
+                <label for="lname"><b>Last name:</b></label>
+                <input type="text" id="lname" ><br>
+                <label for="pwd"><b>New Password:</b></label>
+                <input type="password" id="pwd"  required><br>
+                <label for="pwd2"><b>Re-enter Password:</b></label>
+                <input type="password" id="pwdCheck"  required><br><br>
+                <div>
+                    <!---Radio buttons to select user access level-->
+                    <p>Select account type required</p>
+                    <label for="user"><b>User</b></label>
+                    <input type="radio" id="user" name="accessLvl" onclick="getLicense()">
+                    <label for="mod"><b>Moderator</b></label>
+                    <input type="radio" id="mod" name="accessLvl" onclick="getLicense()">
+                    <label for="admin"><b>Administrator</b>
+                    <input type="radio" id="admin" name="accessLvl" onclick="getLicense()">
+                    </label>
+                    <div id="divText" style="display: none">License Number:
+                        <input type="text" id="license" required>
+                    </div>
+                </div>
+            </form>
+            <div class="login-container">
+                <!---Navigation Buttons-->
+                <button class="btn btn-one" style="color: #121111;" onclick="register()">Register</button>
+            </div>
+        </div>
+</body>
+</html>
